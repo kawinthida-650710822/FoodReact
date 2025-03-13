@@ -1,0 +1,58 @@
+.navbar {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 200px;
+}
+
+.navbar .basket {
+    width: 50px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.navbar li {
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.navbar .active {
+    border-bottom: 2px solid black;
+    transition: opacity 0.3s ease-in-out;  
+}
+
+.navbar li:not(.active) {
+    opacity: 0.5; 
+}
+
+
+.navbar-basket {
+    position: relative;
+}
+
+.navbar-basket .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
